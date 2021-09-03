@@ -7,9 +7,24 @@ import Blog from '../Pages/Blog'
 
 function App() {
   return (
-    <div className="App">
-test
-    </div>
+    <Router>
+      <Route exact path='/'>
+        <Home/>
+      </Route>
+
+      <Route  path='/about'>
+        <About/>
+      </Route>
+
+      <Route  path='/contact'>
+        <Contact/>
+      </Route>
+
+      <Route  path='/blog'>
+        <Blog/>
+      </Route>
+
+    </Router>
   );
 }
 
