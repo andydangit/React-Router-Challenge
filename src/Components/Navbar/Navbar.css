@@ -35,3 +35,7 @@ button {
     padding: 5px 12px;
 }
 
+
+.selectedPage{
+  color: rgba(0, 0, 0, 0.9);
+}
