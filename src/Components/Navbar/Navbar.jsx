@@ -22,6 +22,9 @@ function Navbar() {
         <NavLink activeClassName="selectedPage" className="link" to="/blog">
           Blog
         </NavLink>
+        <NavLink activeClassName="selectedPage" className="link" to="/admin">
+          Admin
+        </NavLink>
         <button onClick={() => setIsLoggedIn(!isLoggedIn)}>{isLoggedIn? "logout" : "login"} </button>
       </div>
     </nav>

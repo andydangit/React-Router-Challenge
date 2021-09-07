@@ -6,6 +6,7 @@ import Contact from "../Pages/Contact";
 import Blog from "../Pages/Blog";
 import Navbar from "../Components/Navbar/Navbar";
 import { AuthContext, AuthContextProvider } from "../Context/AuthContext";
+import Admin from "../Components/Admin/Admin";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
 
           <Route path="/blog">
             <Blog />
+          </Route>
+          <Route path="/admin">
+            <Admin />
           </Route>
         </Switch>
       </Router>
