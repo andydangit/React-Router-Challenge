@@ -5,29 +5,32 @@ import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import Blog from "../Pages/Blog";
 import Navbar from "../Components/Navbar/Navbar";
+import { AuthContext, AuthContextProvider } from "../Context/AuthContext";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
+    <AuthContextProvider>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
 
-        <Route path="/about">
-          <About />
-        </Route>
+          <Route path="/about">
+            <About />
+          </Route>
 
-        <Route path="/contact">
-          <Contact />
-        </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
 
-        <Route path="/blog">
-          <Blog />
-        </Route>
-      </Switch>
-    </Router>
+          <Route path="/blog">
+            <Blog />
+          </Route>
+        </Switch>
+      </Router>
+    </AuthContextProvider>
   );
 }
 
